@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="CSS/style.css">
+  <title>Timer</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="navi">
+      <nav>
+        <i class="fa-regular fa-clock"></i>
+        <span id="sw">Stopwatch</span>
+        <a href="#">Calender</a>
+        <a href="#">Clock</a>
+        <a href="#">Timer</a>
+        <a href="#">Home</a>
+      </nav>
+      <button class="insBtn" onclick="displayIns()">Click here for instructions</button>
+    </div>
+
+    <div id="timer-box">
+      <div id="grid">
+       <div class="grid-item">
+        <div class="box" id="1">0</div><input type="text" id="days" placeholder="0">
+       </div>
+      </div>
+      <div id="grid">
+      <div class="grid-item">
+        <div class="box" id="2">0</div><input type="text" id="hours" placeholder="0">
+      </div>
+      </div>
+      <div id="grid">
+      <div class="grid-item">
+        <div class="box" id="3">0</div><input type="text" id="minutes" placeholder="0">
+      </div>
+      </div>
+      <div id="grid">
+     <div class="grid-item">
+      <div class="box" id="4">0</div><input type="text" id="seconds" placeholder="0">
+     </div>
+      </div>
+      <br><br>
+    </div>
+
+    <div class="buttons">
+      <button onclick="setTimer()" style="background-color: #1d2951;">Set Timer</button>
+      <button onclick="startTimer()" style="background-color: rgb(208, 60, 238);">Start/Resume</button>
+      <button onclick="pauseTimer()" style="background-color: rgb(17, 153, 231);">Pause</button>
+      <button onclick="resetTimer()" style="background-color: red;">Reset</button>
+    </div>
+
+    <div class="instructions">
+      Instructions
+      <ol>
+        <li>Enter the values in the Inputs.</li>
+        <li>Press the 'Set Timer' button to set the timer.</li>
+        <li>Press the 'Start/Resume' button to start the timer.</li>
+        <li>Press the 'Pause' button to pause the timer.</li>
+        <li>Press the 'Start/Resume' button to resume the timer.</li>
+        <li>Press 'Reset' button to reset the values.</li>
+      </ol>
+    </div>
+</body>
+
+<script src="JS/script.js"></script>
+
+</html>
